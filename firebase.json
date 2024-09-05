@@ -1,10 +1,28 @@
 {
   "hosting": {
-    "public": "y",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/app-ads.txt",
+        "destination": "/app-ads.html"
+      },
+      {
+        "source": "/Privacy Policy",
+        "destination": "/מדיניות פרטיות.html"
+      },
+      {
+        "source": "/Terms of Use",
+        "destination": "/תנאי שימוש.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
